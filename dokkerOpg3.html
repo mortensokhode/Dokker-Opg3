@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="varDefinitions.css" rel="stylesheet" >
+    <link href="dokkerOpg3.css" rel="stylesheet" >
+    <base target="_self" />
+    <script src="dokkerOpg3.js" defer></script>
+  </head>
+  <body>
+    
+    <div class="mainContainer">
+      <div class="topMessages">
+          <button class="button" type="button" id="toggle01-btn"></button> 
+          <button class="button" type="button" id="toggle02-btn"></button> 
+
+          <span class="errorMessages" id="error-msg" style="display: none"></span>
+
+          <section class="topMsgRgtFrame">
+            <p class="hiddenText" id="debug-flg" hidden>1</p>
+            <p class="pageheading" id="pageheading-elm"></p>
+          </section>
+      </div>
+
+      <div class="mainMessageBox">
+        <section class="firstSection">
+        </section>
+           
+          <div class="subContainer1" id="audiovisual-div" style="display: none">
+            <div class="audiosection">
+              <section class="fullWidth">
+                  <h1>The four seasons - Vivaldi</h1>
+                  <h4>Please choose one</h4>
+              </section>
+  
+              <section class="seasonshoecolor">
+                  <input list="season-lst" class="season" name="season" id="season-inp" placeholder="please choose one">
+                  <datalist class="season-lst" id="season-lst">
+                    <option value="Winter">
+                    <option value="Spring">
+                    <option value="Summer">
+                    <option value="Autumn">
+                  </datalist> 
+                    <p class="fuckingshoes" id="shoecolor-elm"></p>
+                  <audio class="audioControl" id="audiosource-elm" controls>
+                    <source class="audioSource"  src="" type="audio/mp3">
+                  </audio>
+              </section>
+  
+              <section class="fullWidth">
+                <p class="ordinaryText" id="audiomsg-elm"></p>
+                <p class="subText" id="reference-elm" style="display: none"></p>
+              </section>
+            </div>  <!--audiosection  -->
+  
+            <div class="youtubeSection">
+              <section class="fullWidth">
+                  <h4>Le Quattro Stagioni - Vivaldi</h4>
+              </section>
+  
+              <section class="seasonVideoChoice">
+                  <iframe class="videoControl" id="videosource-elm" controls="1">
+                    <source class="videoSource" src="" type="video/mp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                  </iframe>
+              </section>
+            </div>  <!--  youtubeSection  -->
+            
+            <div class="videosection">
+  
+            </div> <!--  videosection -->
+          </div>  <!--  subContainer1  -->
+
+          <div class="subContainer2" id="textbased-div" style="display: flex">
+              <h1>Oppgave 3 - tekstbasert oppgave</h1>
+              <div class="oppgaveBesvarelse" id="oppgaveBesv-elm">
+
+                <section class="oppgave3Text" id="oppgave3-del4">
+                </section>
+            
+                <section class="fullWidth" id="oppgave3-sect">
+                </section>
+
+                <section class="textsection" id="oppgave3-div">
+                  <p class="ordinaryText" id="textelement01"></p>
+
+                  <div class="gameon" id="gameon-elm" contenteditable="true">
+                    <p id="logparagraph-elm" >Focus in on this rectangle and collect points by pressing a key.</p>
+                  </div>
+                    
+                </section>
+              </div>
+
+              <div class="bigTextArea">
+                  <article class="lotsAtext" id="changedText-sct">
+                  </article>
+              </div> <!--  bigTextArea  -->
+          </div>  <!--  subContainer2 -->
+              
+      </div>  <!--  mainMessageBox  -->
+    </div>  <!--  mainContainer  -->
+
+  </body>
+</html>

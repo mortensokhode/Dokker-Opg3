@@ -1,0 +1,24 @@
+:root {
+    /*  Color definitions */
+    --crispyWhite: #ffffff;
+    --theDarkside: #000000;
+    --mainBackground: #787878;
+    --mainDark: #48594a;
+    --greyBackground: #676a66;
+    --lightText: #c5c7d7;
+    --bloodyRed: #6a0909;
+    
+    /* seqson and shoecolors */
+    --initialGrey:#a1a7a3;
+    --springGreen: #126029;
+    --goldenSummer: #cbb245;
+    --brownish: #603713;
+    
+    /*  Site definitions  */
+    /* --mainWidth: 1000px; */
+    --mainWidth: 1000px;
+    --mainHeight: 2000px;
+    
+    /* definitions not in use  */
+  }
+  

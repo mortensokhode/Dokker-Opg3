@@ -1,0 +1,292 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-family: Inter;
+  font-size: 14px;
+  max-width: 1600px;
+
+  background: var(--mainBackground);
+  color: var(--theDarkside);
+  z-index: 100;
+}
+
+.mainContainer {
+  position: auto;
+  width: var(--mainWidth);
+  height: var(--mainHeight);
+  /* border: 2px solid var(--mainDark); */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  z-index: 100;
+}
+
+.topMessages {
+  position: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-content: center;
+  width: 90%;
+  height: 5%;
+  padding: 2em 0 0 2em;
+  background-color: transparent;
+
+  z-index: 100;
+}
+
+.topMsgRgtFrame {
+  position: absolute;
+  top: 0;
+  right: 16.7%;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.button  {
+    position: auto;
+
+    width: 10em;
+    height: 3em;
+
+    background: transparent;
+    color: inherit;
+    font-weight: bolder;
+    border: 1px solid inherit;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+.button:hover{
+  cursor: grab;
+  background-color: var(--mainDark);
+  color: var(--crispyWhite);
+}
+  
+.mainMessageBox {
+  position: auto;
+  width: 90%;
+  height: 60%;
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  padding-top: 1em;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.subContainer1, .subContainer2 {
+  width: 100%;
+  line-height: 14px;
+  color: var(--theDarkside);
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.subContainer1 {
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.subContainer2 {
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.bigTextArea {
+  position: auto;
+  width: 100%;
+  height: min-content;
+  margin-top: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-content:flex-start;
+}
+
+.lotsAtext {
+  width: 80%;
+  border: 1px solid var(--initialGrey);
+}
+
+#audiovisual-div {
+  position: absolute;
+  display: none;
+
+  z-index: 700;
+}
+
+#textbased-div {
+  position: auto;
+  display: flex;
+  
+  z-index: 700;
+}
+
+.oppgave3Text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.oppgave3Text, .fullWidth, .lotsAtext {
+  min-height: fit-content;
+}
+
+.lotsAtext {
+  padding: 15px 0 15px 15px;
+}
+
+.fullWidth {
+  position: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  width: 80%;
+}
+
+.textsection {
+  position: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+  width: 80%;
+}
+
+
+.errorMessages {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  max-width: 40%;
+  color: var(--bloodyRed);
+  font-weight: bolder;
+  display: none;
+  z-index: 180;
+  border: 1px solid var(--theDarkside);
+  background-color: var(--greyBackground);
+  opacity: 0.8;
+  }
+  
+.contentParagraphs {
+  color: var(--theDarkside);
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: left;
+  line-height: 12px;
+}
+
+.pageheading {
+  color: var(--lightText);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.reducedOpacityImg {
+   opacity: 0.3;
+   border-radius: 32px;
+}
+
+.ordinaryText {
+    color: var(--theDarkside);
+    opacity: 0.8;
+}
+
+.season {
+  background-color: transparent;
+}
+
+.subText {
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--lightText);
+    padding: 0em 0em 0em 2em;
+}
+
+.fuckingshoes {
+  display: block;
+  margin-left: 15px;
+  line-height: 20px;
+  z-index: 160;
+  color: var(--initialGrey);
+}
+
+.audiosection {
+  padding-left: 10px;
+  width: 45%;
+}
+
+.youtubeSection, .videosection {
+  width: 50%;
+}
+
+.audioControl, .audioSource {
+  height: 25px;
+  margin-top: 10px;
+  color: var(--lightText);
+  opacity: 0.4;
+}
+
+.frameHeading {
+  position: auto;
+  width: fit-content;
+  height: min-content;
+  display: block;
+
+  order: -100;
+  
+  margin-bottom: 15px;
+  background-color: var(--greyBackground);
+  border: 1px solid var(--mainDark);
+  opacity: 0.85;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-weight: bolder;
+
+  z-index:100;
+}
+
+.gameon  {
+  color: var(--bloodyRed);
+  background-color: var(--lightText);
+  width: 400px;
+  height: 300px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+aria-placeholder {
+  color: var(--brownish);
+}

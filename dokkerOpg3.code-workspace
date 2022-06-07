@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\dokker-opg3\\audio"
+		},
+		{
+			"path": "..\\dokker-opg3\\image"
+		},
+		{
+			"path": "textfiles"
+		}
+	],
+	"settings": {}
+}

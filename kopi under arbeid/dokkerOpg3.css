@@ -1,0 +1,271 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-family: Inter;
+  font-size: 14px;
+  max-width: 1600px;
+
+  background: var(--mainBackground);
+  color: var(--lightText);
+  z-index: 100;
+}
+
+.mainContainer {
+  position: auto;
+  width: var(--mainWidth);
+  height: var(--mainHeight);
+  /* border: 2px solid var(--mainDark); */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  /* background-image: url("https://images.unsplash.com/photo-1513728731559-6bf2c0c931f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size:cover; */
+  z-index: 100;
+}
+
+.topMessages {
+  position: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-content: center;
+  width: 90%;
+  height: 5%;
+  padding: 2em 0 0 2em;
+  background-color: transparent;
+
+  z-index: 100;
+}
+
+.topMsgRgtFrame {
+  position: absolute;
+  top: 0;
+  right: 16.7%;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* border: 1px solid var(--theDarkside); */
+}
+
+.button  {
+    position: auto;
+
+    width: 10em;
+    height: 3em;
+
+    background: transparent;
+    color: inherit;
+    font-weight: bolder;
+    border: 1px solid inherit;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+.button:hover{
+  cursor: grab;
+  background-color: var(--mainDark);
+  /* background-image: url("https://images.unsplash.com/photo-1513728731559-6bf2c0c931f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
+  color: var(--crispyWhite);
+}
+  
+.mainMessageBox {
+  position: auto;
+  width: 90%;
+  height: 60%;
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  padding-top: 1em;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.subContainer1, .subContainer2, .subContainer3 {
+  width: 100%;
+  line-height: 14px;
+  color: var(--theDarkside);
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.subContainer1 {
+  flex-direction: row;
+  align-content: space-around;
+  /* border: 1px solid var(--theDarkside); */
+}
+
+.subContainer2 {
+  flex-direction: column;
+  align-content: space-between;
+  /* border: 1px solid var(--theDarkside); */
+}
+
+.subContainer3 {
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /* border: 1px solid var(--theDarkside); */
+}
+
+
+.bigTextArea {
+  position: auto;
+  width: 100%;
+  min-height: 10em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-content:flex-start;
+}
+
+.lotsAtext {
+  width: 80%;
+  min-height: 30em;
+  
+  border: 1px solid var(--initialGrey);
+  margin-bottom: 5em;
+}
+
+#audiovisual-elm {
+  position: absolute;
+  display: none;
+
+  z-index: 700;
+}
+
+#textbased-elm {
+  position: auto;
+  display: flex;
+  
+  z-index: 650;
+}
+
+#gamers-elm {
+  position: absolute;
+  display: none;
+
+  z-index: 600;
+}
+
+.fullWidth {
+  position: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  width: 80%;
+  height: 20vw;
+}
+
+.errorMessages {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  max-width: 40%;
+  color: var(--bloodyRed);
+  font-weight: bolder;
+  display: none;
+  z-index: 180;
+  border: 1px solid var(--theDarkside);
+  background-color: var(--greyBackground);
+  opacity: 0.8;
+  }
+  
+.contentParagraphs {
+  color: var(--theDarkside);
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: left;
+  line-height: 12px;
+}
+  
+.generalMessages {
+  color: var(--lightText);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 16px;
+}
+
+.pageheading {
+  color: var(--lightText);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.reducedOpacityImg {
+   opacity: 0.3;
+   border-radius: 32px;
+}
+
+.ordinaryText {
+    color: var(--theDarkside);
+    opacity: 0.8;
+}
+
+.season {
+  background-color: transparent;
+}
+
+.subText {
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--lightText);
+    padding: 0em 0em 0em 2em;
+}
+
+.fuckingshoes {
+  display: block;
+  margin-left: 15px;
+  line-height: 20px;
+  z-index: 160;
+  color: var(--initialGrey);
+}
+
+.audiosection {
+  padding-left: 10px;
+  width: 45%;
+}
+
+.youtubeSection, .videosection {
+  width: 50%;
+}
+
+.audioControl, .audioSource {
+  height: 25px;
+  margin-top: 10px;
+  color: var(--lightText);
+  opacity: 0.4;
+}
+
+canvas { 
+  width: 480;
+  height: 320;
+  background: #eee; 
+  display: block; 
+  padding:0;
+  margin: 0 auto; 
+}

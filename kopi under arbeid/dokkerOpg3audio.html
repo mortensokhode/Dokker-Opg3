@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="varDefinitions.css" rel="stylesheet" >
+    <link href="dokkerOpg3.css" rel="stylesheet" >
+    <base target="_self" />
+  </head>
+
+  <body>
+    <div class="mainContainer">
+
+      <div class="topMessages">
+          <button class="button" type="button" id="toggle01-btn"></button> 
+          <button class="button" type="button" id="toggle02-btn"></button> 
+
+          <span class="errorMessages" id="error-msg" ></span>
+
+          <section class="topMsgRgtFrame">
+            <p class="hiddenText" id="debug-flg" hidden>1</p>
+            <p class="pageheading" id="pageheading-elm"></p>
+          </section>
+      </div>
+
+      <div class="mainMessageBox">
+        <section class="firstSection">
+            <p class="generalMessages" id="content01-msg"></p>
+        </section>
+
+            <p class="generalMessages" id="content02-msg"></p>
+            
+        <div class="subContainer">
+          
+          <div class="audiosection">
+            <section class="fullWidth">
+                <h1>The four seasons - Vivaldi</h1>
+                <h4>Please choose one</h4>
+            </section>
+
+            <section class="seasonshoecolor">
+                <input list="season-lst" class="season" name="season" id="season-inp" placeholder="please choose one">
+                <datalist class="season-lst" id="season-lst">
+                  <option value="Winter">
+                  <option value="Spring">
+                  <option value="Summer">
+                  <option value="Autumn">
+                </datalist> <p class="fuckingshoes" id="shoecolor-elm">shoe color</p>
+                <audio class="audioControl" id="audiosource-elm" controls>
+                  <source class="audioSource"  src="" type="audio/mp3">
+                </audio>
+            </section>
+
+            <section class="fullWidth">
+              <p class="ordinaryText" id="mini01-msg"></p>
+            </section>
+          </div>
+
+          <div class="youtubeSection">
+            <section class="fullWidth">
+                <h4>Le Quattro Stagioni - Vivaldi</h4>
+            </section>
+
+            <section class="seasonVideoChoice">
+                <iframe class="videoControl" id="videosource-elm" controls="1">
+                  <source class="videoSource" id="youTubeStream-elm" src="" type="video/mp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+            </section>
+          </div>
+          
+          <div class="textsection">
+          
+          </div>
+
+          <div class="videosection">
+
+          </div>
+
+          
+        </div>
+
+      </div>
+
+    <script src="dokkerOpg3.js"></script>
+  </body>
+</html>
